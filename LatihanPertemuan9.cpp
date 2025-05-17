@@ -33,3 +33,18 @@ public:
         m->Nilai = Nilai;
     }
 };
+
+class Staff
+{
+private:
+    float Gaji = 800000;
+    friend class Universitas;
+public:
+    string Nama;
+    int IDStaff;
+
+    void UbahPangkat(Dosen* Dosen, string PangkatBaru)
+    {
+        Dosen->Pangkat = PangkatBaru;
+    }
+};
