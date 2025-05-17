@@ -62,3 +62,15 @@ public:
         return s->Gaji;
     }
 };
+
+int main()
+{
+    Mahasiswa mhs;
+    Dosen dsn;
+    Staff staff;
+    Universitas univ;
+
+    dsn.beriNilai(&mhs, 85.5);
+    cout << "Gaji Dosen: " << Universitas::DapatkanGajiDosen(&dsn) << endl;
+    cout << "Gaji Staff: " << Universitas::DapatkanGajiStaff(&staff) << endl;
+}
