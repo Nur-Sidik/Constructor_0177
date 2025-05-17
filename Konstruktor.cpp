@@ -14,3 +14,8 @@ public:
     mahasiswa(int iNim, string iNama);     // Konstruktor dengan NIM dan nama
     void cetak();
 };
+
+mahasiswa::mahasiswa() {
+    nim = 0;
+    nama = "";
+}
