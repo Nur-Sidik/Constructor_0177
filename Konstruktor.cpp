@@ -6,3 +6,11 @@ class mahasiswa {
 private:
     int nim;
     string nama;
+
+public:
+    mahasiswa();                           // Konstruktor default
+    mahasiswa(int);                        // Konstruktor dengan NIM
+    mahasiswa(string);                     // Konstruktor dengan nama
+    mahasiswa(int iNim, string iNama);     // Konstruktor dengan NIM dan nama
+    void cetak();
+};
