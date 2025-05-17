@@ -48,3 +48,17 @@ public:
         Dosen->Pangkat = PangkatBaru;
     }
 };
+
+class Universitas
+{
+public:
+    static float DapatkanGajiDosen(Dosen* d)
+    {
+        return d->Gaji;
+    }
+
+    static float DapatkanGajiStaff(Staff* s)
+    {
+        return s->Gaji;
+    }
+};
